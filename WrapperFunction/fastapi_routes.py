@@ -132,7 +132,7 @@ async def create_cow(cows: List[SchemaCowInfo]):
     "/cow/{cow_name}",
     summary="Update a cow info.",
     description="Update a cow's info by name")
-async def update_cow(cow_name: str, extra_data: SchemaCowInfo):
+async def update_cow(cow_name: str, extra_data: dict):
     cow = db.session.query(ModelCow).filter(ModelCow.name == cow_name).first()
     if cow:
         for field, value in extra_data.items():

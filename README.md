@@ -36,9 +36,9 @@
 ```
 - Retrieve one
 
-    GET /cow/{cow_id}
+    GET /cow/{cow_name}
 
-    Return a specific cow by cow_id.
+    Return a specific cow by cow_name.
 
 ```json
     {
@@ -72,15 +72,15 @@
 
 - Update one
 
-    POST /cow/{cow_id}
+    POST /cow/{cow_name}
     
-    update a specific cow's info by cow_id.
+    update a specific cow's info by cow_name.
 
 - Delete one
 
-    DELETE /cow/{cow_id}
+    DELETE /cow/{cow_name}
     
-    update a specific cow's info by cow_id.
+    update a specific cow's info by cow_name.
 
 ### Settings
 
@@ -94,6 +94,7 @@ Attach your own postres uri on .env file.
 ### How to test in local environment.
 
 1. Create a [Python virtual environment](https://docs.python.org/3/tutorial/venv.html#creating-virtual-environments) and activate it.
+In this case: virtual-env/Scripts/activate
 
 2. Run the command below to install the necessary requirements.
 
