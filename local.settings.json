@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=azurecowhed;AccountKey=mnD+oqwddjXA3/AK6m+ANbdOc9KN5OxdD0uJRDK+7EdoKzku3gktu3pTNs8VJyS/Eyo1t2j+Q4sV+ASteV0Biw==;EndpointSuffix=core.windows.net"
+  }
+}
