@@ -1,5 +1,5 @@
-fastapi-sqlalchemy
 fastapi[all]
-psycopg2-binary
+fastapi-sqlalchemy
 pydantic
 python-dotenv
+psycopg2-binary
