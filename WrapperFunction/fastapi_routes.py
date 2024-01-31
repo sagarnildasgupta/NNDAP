@@ -53,9 +53,9 @@ async def get_cows_name(cow_name: str):
     description="Retrieves a specific cow info by sex, it returns all of Male cows if condition is true. and returns Female cows if condition is false. otherwise a 500 error is returned")
 async def get_cows_sex(cow_sex: str):
     try:
-        if cow_sex not in ['true', 'false']:
-            raise KeyError("Invalid filter condition. it must be  'false' or 'true'")
-        if cow_sex == 'true':
+        if cow_sex not in ['Male', 'Female']:
+            raise KeyError("Invalid filter condition. it must be  'Male' or 'Female'")
+        if cow_sex == 'Male':
             condition = "Male"
         else:
             condition = "Female"
